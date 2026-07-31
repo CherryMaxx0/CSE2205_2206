@@ -40,16 +40,17 @@ public:
 
 int main(void) {
     Stack_Mod st(4);
+    std::cout<<st.pop()<<std::endl;
 
-    // pushing elements
-    st.push(1);
-    st.push(2);
-    st.push(3);
-    st.push(4);
+    // // pushing elements
+    // st.push(1);
+    // st.push(2);
+    // st.push(3);
+    // st.push(4);
     
-    std::cout<<st.displayTop()<<std::endl;
-    std::cout<<st.pop()<<std::endl;
-    std::cout<<st.pop()<<std::endl;
-    std::cout<<st.displayTop()<<std::endl;
+    // std::cout<<st.displayTop()<<std::endl;
+    // std::cout<<st.pop()<<std::endl;
+    // std::cout<<st.pop()<<std::endl;
+    // std::cout<<st.displayTop()<<std::endl;
 
 }
