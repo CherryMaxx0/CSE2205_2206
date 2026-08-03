@@ -59,9 +59,9 @@ int main(void){
     q1.Enqueue(27);
     q1.Enqueue(24);
     q1.Enqueue(29);
-    q1.Enqueue(21);
     q1.GetFrontItem();
     q1.GetRearItem();
+    q1.Dequeue();
     q1.Dequeue();
     q1.Enqueue(21);
     q1.GetFrontItem();
