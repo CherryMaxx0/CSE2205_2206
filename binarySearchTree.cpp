@@ -42,7 +42,19 @@ bool search(Node* root, int key) {
 //     }
 //     return present;
 // }
-bool min_search(Node* root) {}
+// Minimum search
+int min_search(Node* root) {
+    if (root==nullptr) return 0;
+    while(root->left!=nullptr) return min_search(root->left);
+    return root->data;
+}
+int max_search(Node* root) {
+    if (root==nullptr) return 0;
+    while(root->right!=nullptr) return max_search(root->right);
+    return root->data;
+}
+
+
 
 
 int main() {
@@ -62,6 +74,9 @@ int main() {
     int key = 7;
     
     // Searching for key in BST
-    std::cout << search(root, key) << std::endl;
+    // std::cout << search(root, key) << std::endl;
     // If Exist will print Boolean Value T or F
+
+    std::cout<<min_search(root)<<std::endl;
+    std::cout<<max_search(root)<<std::endl;
 }
