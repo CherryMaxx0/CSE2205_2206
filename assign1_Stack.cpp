@@ -1,7 +1,7 @@
 #include<iostream>
 
 class Stack_Mod{
-    int *arr;
+    int* arr;
     int capacity;
     int top;
 public:

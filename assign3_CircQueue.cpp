@@ -1,7 +1,7 @@
 #include <iostream>
 
 class CircQueue_MOD {
-    int *arr;
+    int* arr;
     int capacity;
     int front;
     int rear;
