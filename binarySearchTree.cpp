@@ -45,13 +45,13 @@ bool search(Node* root, int key) {
 // Minimum search
 int min_search(Node* root) {
     if (root==nullptr) return 0;
-    while(root->left!=nullptr) return min_search(root->left);
-    return root->data;
+    else if (root->left!=nullptr) return min_search(root->left);
+    else return root->data;
 }
 int max_search(Node* root) {
     if (root==nullptr) return 0;
-    while(root->right!=nullptr) return max_search(root->right);
-    return root->data;
+    else if (root->right!=nullptr) return max_search(root->right);
+    else return root->data;
 }
 
 
